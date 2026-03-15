@@ -11,7 +11,7 @@ class Tgo < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/zlrkw11/tgo/releases/download/v0.2.1/tgo_0.2.1_darwin_amd64.tar.gz"
-      sha256 "5df7b83b035582a1cdb4c28e19d3c699951f56b656f1d022ebe1ff6be5b7fbf7"
+      sha256 "95219224112eece059b11fdfd4944b7abad5aec230349dae45e73a93e9d9e39c"
 
       define_method(:install) do
         bin.install "tgo"
@@ -19,7 +19,7 @@ class Tgo < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/zlrkw11/tgo/releases/download/v0.2.1/tgo_0.2.1_darwin_arm64.tar.gz"
-      sha256 "8cd08140eda537abc0f18ef7f23591639c7d5cb6396ee9e136cd975024774353"
+      sha256 "362f87b2ffd4c818a161115fb0b2146fe0796b3dc7f0c468a83632e0f327fd47"
 
       define_method(:install) do
         bin.install "tgo"
@@ -30,14 +30,14 @@ class Tgo < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/zlrkw11/tgo/releases/download/v0.2.1/tgo_0.2.1_linux_amd64.tar.gz"
-      sha256 "17bdb5030592bcd31b81d1803f272e45305443a2bbf9be70afb5b2b06b26347c"
+      sha256 "66fb8bd4ef926b24481a3df4ef70885bab8dae3248b13c83b9ba9974db15832a"
       define_method(:install) do
         bin.install "tgo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/zlrkw11/tgo/releases/download/v0.2.1/tgo_0.2.1_linux_arm64.tar.gz"
-      sha256 "6b5baf69f6479203b7f7196e9a4d7040885d79bec8418be1be9bed6ff3af5d56"
+      sha256 "b7c45ff8aeb761f607345a0c8af94e37ec218e72d8a71fbfec2bf731065228c7"
       define_method(:install) do
         bin.install "tgo"
       end
