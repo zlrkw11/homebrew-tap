@@ -5,21 +5,21 @@
 class Tgo < Formula
   desc "A beautiful, interactive TUI for go test"
   homepage "https://github.com/zlrkw11/tgo"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zlrkw11/tgo/releases/download/v0.2.0/tgo_0.2.0_darwin_amd64.tar.gz"
-      sha256 "c93a44b32b762dce39a61c82ac9730e0050a9771e5d9dc266151c1bd417cbcfd"
+      url "https://github.com/zlrkw11/tgo/releases/download/v0.2.1/tgo_0.2.1_darwin_amd64.tar.gz"
+      sha256 "5df7b83b035582a1cdb4c28e19d3c699951f56b656f1d022ebe1ff6be5b7fbf7"
 
       define_method(:install) do
         bin.install "tgo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zlrkw11/tgo/releases/download/v0.2.0/tgo_0.2.0_darwin_arm64.tar.gz"
-      sha256 "72007cfdc7b72236db2584666e6e8d696b50cc178bba9566069960df7807034c"
+      url "https://github.com/zlrkw11/tgo/releases/download/v0.2.1/tgo_0.2.1_darwin_arm64.tar.gz"
+      sha256 "8cd08140eda537abc0f18ef7f23591639c7d5cb6396ee9e136cd975024774353"
 
       define_method(:install) do
         bin.install "tgo"
@@ -29,15 +29,15 @@ class Tgo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zlrkw11/tgo/releases/download/v0.2.0/tgo_0.2.0_linux_amd64.tar.gz"
-      sha256 "5429e1a2aaf5d418769ae8867dc24563dd23e24d0f582153aea74d00cd8a593a"
+      url "https://github.com/zlrkw11/tgo/releases/download/v0.2.1/tgo_0.2.1_linux_amd64.tar.gz"
+      sha256 "17bdb5030592bcd31b81d1803f272e45305443a2bbf9be70afb5b2b06b26347c"
       define_method(:install) do
         bin.install "tgo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zlrkw11/tgo/releases/download/v0.2.0/tgo_0.2.0_linux_arm64.tar.gz"
-      sha256 "d432a3dd9f83c39aa8031b6193f50518337450073b77cf3487a42606adbbf106"
+      url "https://github.com/zlrkw11/tgo/releases/download/v0.2.1/tgo_0.2.1_linux_arm64.tar.gz"
+      sha256 "6b5baf69f6479203b7f7196e9a4d7040885d79bec8418be1be9bed6ff3af5d56"
       define_method(:install) do
         bin.install "tgo"
       end
